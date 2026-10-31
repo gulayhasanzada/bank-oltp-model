@@ -1,0 +1,16 @@
+[project]
+name = "bankmodel"
+version = "0.1.0"
+description = "Bank OLTP data model (PostgreSQL 18, Azerbaijan): deterministic generator of conceptual, logical and physical model docs and DDL"
+authors = [
+    { name = "ghesenzade", email = "hesenzade.g1@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+bankmodel = "bankmodel.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
